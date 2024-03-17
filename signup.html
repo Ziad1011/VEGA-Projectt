@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="img/favIcon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat:wght@300&family=Open+Sans&family=Oswald&family=Poppins:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <link rel="stylesheet" href="css/signup.css" />
+  <title>Login</title>
+
+
+</head>
+
+<body>
+  <form method="post" id="signupForm">
+
+    <div class="content">
+      <div class="form-title">
+        <h2>Sign up now and become a <img src="img/Star 3 (1).png" alt="">star in your field</h2>
+      </div>
+
+      <div class="input-field">
+        <button><img src="img/google.webp" alt="" class="google">Continue With Google</button>
+      </div>
+
+      <div class="input-field">
+        <button><img src="img/Vector.webp" alt="" class="facebook">Continue With Facebook</button>
+      </div>
+
+      <div class="input-field">
+        <button><img src="img/apple.webp" alt="" class="apple">Continue With Apple</button>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="mail">
+        <input type="text" name="fName" id="fName" placeholder="First Name" required style="border: 2px solid #D1D3D4">
+        <div class="error" id="fNameError"></div>
+
+        <input type="text" name="lName" id="lName" placeholder="Last Name" required style="border: 2px solid #D1D3D4">
+        <div class="error" id="lNameError"></div>
+      </div>
+
+      <div class="mail">
+        <select name="Gender" id="Gender" style="border: 2px solid #D1D3D4;" required>
+          <option value="" disabled selected>Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <input type="number" name="age" id="age" placeholder="Age" min="8" max="90" style="border: 2px solid #D1D3D4;"
+          required>
+      </div>
+
+      <div class="number">
+        <input id="phone" type="tel" name="tel" style=" border: 2px solid #D1D3D4; width: 100%;" required>
+        <input type="tel" name="number" id="number" placeholder="Phone Number" style="border: 2px solid #D1D3D4" ;
+          required>
+      </div>
+      <input type="text" name="eAddress" id="eAddress" placeholder="Email Address"
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" style="border: 2px solid #D1D3D4" required>
+
+
+      <div class="error" id="eAddressError"></div>
+
+      <input type="password" name="password" id="password" placeholder="Password" style="border: 2px solid #D1D3D4"
+        required>
+      <div class="error" id="passwordError"></div>
+
+      <input type="submit" name="" id="signup" value="Sign Up" class="login" onclick="validateSignUp()">
+    </div>
+  </form>
+
+
+  <div class="bg">
+    <img src="img/Frame-985.webp" alt="frame-bg-image" />
+  </div>
+  <script src="js/signup.js"></script>
+  <script src="js/lib/jquery-3.7.1.min.js"></script>
+  <script src="js/lib/popper.min.js"></script>
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
+</body>
+
+</html>

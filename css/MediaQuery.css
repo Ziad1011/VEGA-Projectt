@@ -1,0 +1,396 @@
+@media (max-width: 2560px) and (min-width: 1441px) {
+  nav .container-fluid .navbar-nav {
+    padding-left: 35px;
+  }
+}
+
+@media (max-width: 1440px) and (min-width: 1201px) {
+  nav .container-fluid .navbar-nav {
+    padding-left: 35px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .navbar-collapse ul a {
+    font-size: small;
+  }
+
+  .navbar-brand img {
+    width: 6.8rem;
+  }
+
+  nav .container-fluid .navbar-collapse .nav-btns .btn {
+    padding: 10px 18px !important;
+  }
+
+  .progress-tracker--vertical .progress-step::after {
+    right: auto;
+    background-color: #d9dbe9;
+    top: 141px;
+    left: 22px;
+    width: 4px;
+    height: 92%;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  /* nav mediaQuery */
+  nav .container-fluid .navbar-nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .navbar-collapse .nav-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .navbar-collapse .nav-btns a {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* header mediaQuery */
+  header .head {
+    text-align: center;
+  }
+
+  header .head h1 {
+    font-size: 2.3rem !important;
+  }
+
+  header .head p {
+    font-size: 1.2rem !important;
+  }
+
+  header .panels {
+    width: 100%;
+  }
+
+  header .panels .panel .panel-description {
+    font-size: small;
+  }
+
+  @media (max-width: 992px) and (min-width: 769px) {
+    .content {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .roadmapImg {
+      display: contents;
+    }
+
+    .txt2 {
+      width: 100%;
+    }
+
+    .vertical {
+      margin: 0;
+      background-color: #fafafa;
+
+    }
+
+  }
+
+  @media (max-width: 768px) and (min-width: 576px) {
+    .content {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .roadmapImg {
+      display: contents;
+    }
+
+    .txt2 {
+      width: 100%;
+    }
+
+    .roads {
+      display: contents;
+    }
+
+    .step {
+      margin: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .step img {
+      width: 100%;
+      height: 50%;
+    }
+
+    .vertical {
+      margin: 0;
+      background-color: #fafafa;
+
+    }
+
+
+    .progress-tracker--vertical .progress-marker {
+      position: absolute;
+      left: 0;
+      width: 37px;
+      height: 37px;
+    }
+
+
+
+    .progress-tracker--vertical .progress-step {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      margin: 0 15px;
+
+
+    }
+  }
+
+  @media (max-width: 577px) and (min-width: 425px) {
+    .content {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 0 40px;
+    }
+
+    .roadmapImg {
+      display: contents;
+    }
+
+    .txt2 {
+      width: 100%;
+    }
+
+    .roads {
+      display: contents;
+    }
+
+    .step {
+      margin: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .step img {
+      width: 100%;
+      height: 50%;
+    }
+
+    .vertical {
+      margin: 0;
+      background-color: #fafafa;
+
+    }
+
+
+    .progress-tracker--vertical .progress-marker {
+      position: absolute;
+      left: 0;
+      width: 37px;
+      height: 37px;
+    }
+
+
+
+    .progress-tracker--vertical .progress-step {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      margin: 0 15px;
+
+
+    }
+  }
+
+  @media (max-width: 576px) {
+    .glide__arrows {
+      display: none;
+    }
+
+  }
+
+  @media (max-width: 425px) and (min-width: 376px) {
+    .content {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 0 20px;
+    }
+
+    .roadmapImg {
+      display: contents;
+    }
+
+    .txt2 {
+      width: 100%;
+    }
+
+    .roads {
+      display: contents;
+    }
+
+    .step {
+      margin: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .step img {
+      width: 100%;
+      height: 50%;
+    }
+
+    .vertical {
+      margin: 0;
+      background-color: #fafafa;
+
+    }
+
+
+    .progress-tracker--vertical .progress-marker {
+      position: absolute;
+      left: 0;
+      width: 37px;
+      height: 37px;
+    }
+
+
+
+    .progress-tracker--vertical .progress-step {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      margin: 0 15px;
+
+
+    }
+  }
+
+  @media (max-width: 376px) and (min-width: 321px) {
+    .txt2 {
+      width: 100%;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 0 20px;
+    }
+
+    .roadmapImg {
+      display: contents;
+    }
+
+    .roads {
+      display: contents;
+    }
+
+    .step {
+      margin: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .step img {
+      width: 100%;
+      height: 50%;
+    }
+
+    .vertical {
+      margin: 0;
+      background-color: #fafafa;
+
+    }
+
+
+    .progress-tracker--vertical .progress-marker {
+      position: absolute;
+      left: 0;
+      width: 37px;
+      height: 37px;
+    }
+
+
+
+    .progress-tracker--vertical .progress-step {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      margin: 0 15px;
+
+
+    }
+  }
+
+  @media (max-width: 320px) {
+    .navbar-brand img {
+      width: 8rem;
+    }
+
+    .txt2 {
+      width: 100%;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 0 20px;
+    }
+
+    .roadmapImg {
+      display: contents;
+    }
+
+    .vertical {
+      margin: 0;
+      background-color: #fafafa;
+
+    }
+
+    .roads {
+      display: contents;
+    }
+
+    .step {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .step img {
+      width: 100%;
+      height: 50%;
+    }
+
+    .vertical {
+      margin: 0;
+      background-color: #fafafa;
+
+    }
+
+
+    .progress-tracker--vertical .progress-marker {
+      position: absolute;
+      left: 0;
+      width: 37px;
+      height: 37px;
+    }
+
+
+
+    .progress-tracker--vertical .progress-step {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      margin: 0 15px;
+
+
+    }
+  }
+}
