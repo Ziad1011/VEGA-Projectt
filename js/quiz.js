@@ -250,3 +250,8 @@ function queCounter(index) {
     "</p> Questions</span>";
   bottom_ques_counter.innerHTML = totalQueCounTag; //adding new span tag inside bottom_ques_counter
 }
+
+function hideButton() {
+  const restart_quiz = result_box.querySelector(".buttons .restart");
+  restart_quiz.style.display = "none";
+}

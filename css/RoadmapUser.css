@@ -100,7 +100,9 @@ select.flat-select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background: #008ffb url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60px' height='60px'><polyline fill='white' points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>") no-repeat scroll right 2px top 9px / 16px 16px;
+  background: #008ffb
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60px' height='60px'><polyline fill='white' points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>")
+    no-repeat scroll right 2px top 9px / 16px 16px;
   border: 0 none;
   border-radius: 3px;
   color: #fff;
@@ -358,7 +360,7 @@ select.flat-select:hover {
   font-weight: 100;
 }
 
-.progress-step>a {
+.progress-step > a {
   display: block;
 }
 
@@ -406,7 +408,7 @@ select.flat-select:hover {
 }
 
 .progress-step .progress-text,
-.progress-step .progress-step>a .progress-text {
+.progress-step .progress-step > a .progress-text {
   color: #333333;
 }
 
@@ -773,19 +775,26 @@ select.flat-select:hover {
   }
 }
 
-@media (max-width: 2560px) and (min-width: 1441px) {}
+@media (max-width: 2560px) and (min-width: 1441px) {
+}
 
-@media (max-width: 1440px) and (min-width: 1201px) {}
+@media (max-width: 1440px) and (min-width: 1201px) {
+}
 
-@media (max-width: 1200px) and (min-width: 993px) {}
+@media (max-width: 1200px) and (min-width: 993px) {
+}
 
-@media (max-width: 992px) and (min-width: 769px) {}
+@media (max-width: 992px) and (min-width: 769px) {
+}
 
-@media (max-width: 768px) and (min-width: 577px) {}
+@media (max-width: 768px) and (min-width: 577px) {
+}
 
-@media (max-width: 576px) and (min-width: 426px) {}
+@media (max-width: 576px) and (min-width: 426px) {
+}
 
-@media (max-width: 425px) and (min-width: 376px) {}
+@media (max-width: 425px) and (min-width: 376px) {
+}
 
 @media (max-width: 375px) and (min-width: 321px) {
   .tabs {
@@ -801,4 +810,5 @@ select.flat-select:hover {
   }
 }
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+}
