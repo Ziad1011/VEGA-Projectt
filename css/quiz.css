@@ -132,7 +132,6 @@ div.progress-bar {
   background-color: #5634ae;
 }
 
-
 .exam {
   height: 1000px;
   border-radius: 8px;
@@ -160,7 +159,7 @@ section .option_list {
 
 section .option_list .option {
   background-color: white;
-  border: 2px solid #D1D3D4;
+  border: 2px solid #d1d3d4;
   border-radius: 5px;
   padding: 8px 15px;
   font-size: 17px;
@@ -179,8 +178,8 @@ section .option_list .option:last-child {
 
 section .option_list .option:hover {
   color: white;
-  background-color: #5634AE;
-  border: 1px solid #5634AE;
+  background-color: #5634ae;
+  border: 1px solid #5634ae;
 }
 
 section .option_list .option.correct {
@@ -351,7 +350,6 @@ footer button.show {
   height: 100%;
   overflow: auto;
   background-color: chartreuse;
-
 }
 
 .popup-content {
@@ -375,7 +373,6 @@ footer button.show {
   text-decoration: none;
   cursor: pointer;
 }
-
 
 .buttons button.restart {
   color: #fff;
