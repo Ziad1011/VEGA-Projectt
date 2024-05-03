@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses</title>
+  <link rel="stylesheet" href="css/Courses.css">
+  <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+  <link rel="shortcut icon" href="img/favIcon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/lib/fontawesome-free-6.4.2-web/css/all.min.css">
+
+</head>
+
+<body>
+
+
+
+  <div class="gap-5 courses">
+    <p class="txt1">Courses</p>
+    <p class="txt2">Create and manageyour courses .</p>
+  </div>
+  <main>
+    <div class="container">
+
+      <!-- Search -->
+      <div>
+        <form action="#" class="search-filter">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass" style="cursor: pointer;"></i>
+            <input type="search" class="" placeholder="search for any course">
+          </div>
+          <div class="filter">
+            <button class="filter-btn" type="submit">
+              <span class="txt-filter">Filter</span>
+              <span>
+                <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.125 0.5H22.875C23.1734 0.5 23.4595 0.618526 23.6705 0.829505C23.8815 1.04048 24 1.32663 24 1.625C24 1.92337 23.8815 2.20952 23.6705 2.4205C23.4595 2.63147 23.1734 2.75 22.875 2.75H1.125C0.826631 2.75 0.540483 2.63147 0.329505 2.4205C0.118526 2.20952 0 1.92337 0 1.625C0 1.32663 0.118526 1.04048 0.329505 0.829505C0.540483 0.618526 0.826631 0.5 1.125 0.5ZM4.5 7.625C4.5 7.32663 4.61853 7.04048 4.8295 6.8295C5.04048 6.61853 5.32663 6.5 5.625 6.5H18.375C18.6734 6.5 18.9595 6.61853 19.1705 6.8295C19.3815 7.04048 19.5 7.32663 19.5 7.625C19.5 7.92337 19.3815 8.20952 19.1705 8.42049C18.9595 8.63147 18.6734 8.75 18.375 8.75H5.625C5.32663 8.75 5.04048 8.63147 4.8295 8.42049C4.61853 8.20952 4.5 7.92337 4.5 7.625ZM9 13.625C9 13.3266 9.11853 13.0405 9.3295 12.8295C9.54048 12.6185 9.82663 12.5 10.125 12.5H13.875C14.1734 12.5 14.4595 12.6185 14.6705 12.8295C14.8815 13.0405 15 13.3266 15 13.625C15 13.9234 14.8815 14.2095 14.6705 14.4205C14.4595 14.6315 14.1734 14.75 13.875 14.75H10.125C9.82663 14.75 9.54048 14.6315 9.3295 14.4205C9.11853 14.2095 9 13.9234 9 13.625Z"
+                    fill="#002333" />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+  </main>
+
+
+
+
+  <div class="d-flex justify-content-center">
+    <table class='drag'>
+      <tbody class='drag-list'>
+        <tr class='drag-item1 '>
+          <td></td>
+          <td>Thumbnail</td>
+          <td>Course Name</td>
+          <td>Creation Date</td>
+          <td>Sales</td>
+          <td>Enrollment</td>
+          <td>Status</td>
+          <td>Action</td>
+        </tr>
+
+        <tr class='drag-item' draggable='true'>
+          <td class='drag-icon'>⠿</td>
+
+          <td><img src="img/Thum.png" alt=""></td>
+          <td style="width: 12%;"><a href="" style="color: black;">Python from zero to hero.</a></td>
+          <td>23 Apr 2024</td>
+          <td style="padding-left: 45px;">0:00 Le</td>
+          <td>0</td>
+          <td class="publish">Published</td>
+          <td>...</td>
+        </tr>
+
+        <tr class='drag-item' draggable='true'>
+          <td class='drag-icon'>⠿</td>
+
+          <td><img src="img/Thum.png" alt=""></td>
+          <td style="width: 12%;"><a href="" style="color: black;">Python from zero to hero.</a></td>
+          <td>23 Apr 2024</td>
+          <td style="padding-left: 45px;">0:00 Le</td>
+          <td>0</td>
+          <td class="publish">Published</td>
+          <td>...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="btn1">
+    <button><a href="AddNewCourse.html" class="text-light" style="text-decoration: none;">Add New Course</a> <i
+        class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+  </div>
+
+
+
+
+
+  <script src="js/lib/jquery-3.7.1.min.js"></script>
+  <script src="js/lib/popper.min.js"></script>
+  <script src="js/lib/bootstrap.js"></script>
+  <script src="js/Courses.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/dist/sortable.min.js"></script>
+
+
+</body>
+
+</html>

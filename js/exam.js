@@ -326,26 +326,28 @@ function showQuetions(index) {
 
   // Change text of next button to "Submit" if last question
   const next_btn = document.querySelector(".next_btn");
+
   if (index === questions.length - 1) {
+    next_btn.type = "submit";
     next_btn.textContent = "Submit";
+    // Hide the "Next Question" button visually (optional)
+    next_btn.style.display = "none"; // Uncomment to hide the button
   } else {
-    next_btn.textContent = "Next Que";
+    next_btn.textContent = "Next Question";
   }
 }
 
-// Get the submit button and popup elements
-const submitBtn = document.querySelector(".submitt");
-const popup = document.querySelector(".popup");
+// // Get the submit button and popup elements
+// const submitBtn = document.querySelector(".submitt");
+// const popup = document.querySelector(".popup");
 
-// Log to ensure the elements are selected correctly
-console.log(submitBtn);
-console.log(popup);
+// // Log to ensure the elements are selected correctly
+// console.log(submitBtn);
+// console.log(popup);
 
-// Function to show the popup
-function showPopup() {
-  console.log("Submit button clicked");
-  popup.style.display = "block";
-}
+// // Function to show the popup
+// function showPopup() {
+//   console.log("Submit button clicked");
+//   popup.style.display = "block";
 
 // Add event listener to the submit button
-submitBtn.addEventListener("click", showPopup);

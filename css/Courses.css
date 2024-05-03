@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url(../Assets/fonts/Poppins-Light.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../Assets/fonts/Poppins-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../Assets/fonts/Poppins-SemiBold.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../Assets/fonts/Poppins-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../Assets/fonts/Poppins-ExtraBold.ttf);
+  font-weight: 900;
+}
+
+.courses {
+  background-color: #ece7fe;
+  padding: 100px 50px;
+
+  font-weight: 800;
+}
+
+.courses .txt1 {
+  font-size: 32px;
+  margin-left: 120px;
+  font-weight: 600;
+}
+
+.courses .txt2 {
+  font-size: 18px;
+  margin-left: 120px;
+  font-weight: 400;
+  color: #6f6c8f;
+}
+
+main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fafafa;
+}
+
+/* Search */
+main .search-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 0 56px;
+}
+
+main .search {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  flex: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+main .search input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding-left: 10px;
+  width: 100%;
+}
+
+main .search input:focus {
+  border: 0;
+  outline: 0;
+}
+
+main .filter {
+  width: 180px;
+}
+
+main .filter-btn {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: transparent;
+  width: 100%;
+  cursor: pointer;
+  transition: var(--main-trans);
+}
+
+main .filter-btn:hover {
+  background: #eee;
+}
+
+main .filter-btn .txt-filter {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+@media (max-width: 567px) {
+  main .search-filter {
+    flex-direction: column;
+  }
+
+  main .filter,
+  main .search {
+    width: 100%;
+  }
+}
+
+table {
+  border: 1px solid #d1d3d4;
+  border-collapse: collapse;
+  width: 1164px;
+  height: 229px;
+}
+
+th,
+td {
+  border: 1px solid #d1d3d4;
+  text-align: center;
+  padding: 0px 25px;
+}
+
+tr:nth-child(even) {
+  border: 1px solid #d1d3d4;
+  text-align: center;
+}
+
+.drag {
+  font: 100 0.85rem poppins, helvetica, sans-serif;
+  width: 1164px;
+}
+
+.drag-item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: normal;
+  margin: 0.5rem 0;
+  padding: 0.75rem 0%;
+  background-color: white;
+  cursor: grab;
+  gap: 38px;
+  font-weight: 400;
+}
+
+.drag-item1 {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  padding: 0.75rem 0rem;
+  background-color: white;
+  gap: 42px;
+  font-weight: 500;
+}
+
+.drag-details {
+  display: flex;
+  align-items: center;
+}
+
+.drag-icon {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.active :where(.drag-details, .drag-icon) {
+  opacity: 0;
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.btn1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 0;
+}
+
+.btn1 button {
+  padding: 15px 70px;
+  background-color: #5634ae;
+  border: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.publish {
+  background-color: #ece7fe;
+  padding: 5px 11px;
+  text-align: center;
+  margin-left: 90px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}

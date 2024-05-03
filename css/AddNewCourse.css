@@ -1,0 +1,633 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url(../Assets/fonts/Poppins-Light.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../Assets/fonts/Poppins-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../Assets/fonts/Poppins-SemiBold.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../Assets/fonts/Poppins-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../Assets/fonts/Poppins-ExtraBold.ttf);
+  font-weight: 900;
+}
+
+.courses {
+  background-color: #ece7fe;
+  padding: 100px 50px;
+
+  font-weight: 800;
+}
+
+.courses .txt1 {
+  font-size: 32px;
+  /* margin-left: 120px; */
+  font-weight: 600;
+}
+
+.courses .txt2 {
+  font-size: 18px;
+  /* margin-left: 120px; */
+  font-weight: 400;
+  color: #6F6C8F;
+}
+
+
+
+
+
+.main {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 188px;
+}
+
+.menu ul {
+  display: flex;
+  margin-bottom: -75px;
+}
+
+.menu ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 40px;
+}
+
+.menu ul li .icons {
+  font-size: 25px;
+  color: #5634AE;
+  margin: 0 60px;
+}
+
+.menu ul li .label {
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #5634AE;
+}
+
+.menu ul li .step {
+  height: 30px;
+  width: 32px;
+  border-radius: 50%;
+  /* background-color: #d7d7c3; */
+  margin: 20px 0 10px;
+  display: grid;
+  place-items: center;
+  color: #d7d7c3;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid #d7d7c3;
+}
+
+.step::after {
+  content: "";
+  position: absolute;
+  width: 117px;
+  height: 3px;
+  background-color: #d7d7c3;
+  right: 30px;
+}
+
+.first::after {
+  width: 0;
+  height: 0;
+}
+
+.menu ul li .step .awesome {
+  display: none;
+}
+
+.menu ul li .step p {
+  font-size: 18px;
+}
+
+.menu ul li .active {
+  background-color: #5634AE;
+  font-weight: 500;
+  font-size: 13px;
+
+}
+
+.menu li .active::after {
+  background-color: #5634AE;
+
+}
+
+.menu ul li .active p {
+  display: none;
+}
+
+.menu ul li .active .awesome {
+  display: flex;
+}
+
+.txt3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.c-title .title {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.c-title input {
+  height: 48px;
+  border: 1px solid #A0A3BD;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  outline: none;
+  padding: 12px;
+}
+
+.c-title input::placeholder {
+  /* padding: 10px; */
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.c-title input::content {
+  color: #6F6C8F;
+}
+
+.c-title .txt4 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6F6C8F;
+}
+
+.c-title .upload {
+  padding: 10px 90px;
+  background-color: #5634AE;
+  color: white;
+  outline: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: 1px solid #5634AE;
+}
+
+.c-title #category {
+  width: 50%;
+  padding: 10px;
+  color: #A0A3BD;
+  border: 1px solid #A0A3BD;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.c-title .txt5 {
+  color: #6F6C8F;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.c-title #projectTimeline {
+  height: 48px;
+  border: 1px solid #A0A3BD;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  outline: none;
+  padding: 12px;
+  width: 100%;
+}
+
+.c-title input::placeholder {
+  /* padding: 10px; */
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.c-title #addButton {
+  background-color: #5634AE;
+  color: white;
+  width: 20%;
+  padding: 10px 25px;
+  outline: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.c-title .addButton2 {
+  background-color: #5634AE;
+  color: white;
+  width: 20%;
+  padding: 10px 25px;
+  outline: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.c-title .addButton3 {
+  background-color: #5634AE;
+  color: white;
+  width: 20%;
+  padding: 10px 25px;
+  outline: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+
+.buttons #back {
+  padding: 10px 115px;
+  color: #5634AE;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  outline: none;
+  border: 1px solid #5634AE;
+  background-color: white;
+}
+
+.buttons #nextbutton {
+  padding: 10px 100px;
+  color: white;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  outline: none;
+  border: 1px solid none;
+  background-color: #5634AE;
+}
+
+.drag {
+
+  font: 100 0.85rem poppins, helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.85);
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.drag-item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.25rem;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  background-color: white;
+  cursor: grab;
+}
+
+.drag-details {
+  display: flex;
+  align-items: center;
+}
+
+.drag-img {
+  width: 3.25rem;
+  height: 3.25rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 1rem;
+  pointer-events: none;
+}
+
+.drag-icon {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.active :where(.drag-details, .drag-icon) {
+  opacity: 0;
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.txt7 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.txt8 {
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+}
+
+.txt9 {
+  font-weight: 400;
+  font-size: 12px;
+  color: #6F6C8F;
+}
+
+.addLessonButton {
+  border: none;
+  padding: 10px 25px;
+  color: #5634AE;
+  background-color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.txt10 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.syntax {
+  border: 1px solid #D9D9D9;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.all {
+  border: 1px solid #D9D9D9;
+  padding-bottom: 67px;
+}
+
+.syntax1 {
+  padding: 30px 20px;
+  border-top: none;
+  padding-top: 20px;
+}
+
+.txt12 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.edit {
+  color: #5634AE;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.txt13 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #6F6C8F;
+}
+
+#backButton {
+  font-weight: 400;
+  font-size: 16px;
+  color: #5634AE;
+}
+
+.addContent {
+  background-color: #5634AE;
+  color: white;
+  width: 20%;
+  padding: 10px 25px;
+  outline: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+
+}
+
+.content1 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contentDetail {
+  border: 1px solid #D1D3D4;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#nextbutton1 {
+  padding: 10px 135px;
+  color: white;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  outline: none;
+  border: 1px solid none;
+  background-color: #5634AE;
+
+}
+
+.txt14 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #6F6C8F;
+}
+
+.price input {
+  width: 273px;
+  height: 40px;
+}
+
+.country select {
+  width: 237px;
+  height: 40px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 0 10px;
+  outline: none;
+  border: 1px solid #D1D3D4;
+}
+
+.certificateDiv {
+  max-width: 1300px;
+  height: 462px;
+  border: 1px solid #D1D3D4;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.certificateDiv button {
+  background-color: #5634AE;
+  color: white;
+
+  padding: 10px 40px;
+  outline: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+@media (max-width: 625px) {
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step::after {
+    content: "";
+    position: absolute;
+    width: 117px;
+    height: 3px;
+    background-color: white;
+    right: 30px;
+  }
+
+  .menu li .active::after {
+    background-color: white;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .c-title #addButton {
+    background-color: #5634AE;
+    width: 100%;
+    padding: 10px 25px;
+    outline: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+  }
+
+  .c-title .addButton2 {
+    background-color: #5634AE;
+    width: 100%;
+    padding: 10px 25px;
+    outline: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+  }
+
+  .c-title .addButton3 {
+    background-color: #5634AE;
+    width: 100%;
+    padding: 10px 25px;
+    outline: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+  }
+
+  .addContent {
+    background-color: #5634AE;
+    color: white;
+    width: 100%;
+    padding: 10px 25px;
+    outline: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+  }
+
+  .coursePrice {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+}
