@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses</title>
+  <link rel="stylesheet" href="css/AddNewCourse.css">
+  <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+  <link rel="shortcut icon" href="img/favIcon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/lib/fontawesome-free-6.4.2-web/css/all.min.css">
+
+</head>
+
+<body>
+  <div class="gap-5 courses">
+    <p class="txt1">Courses</p>
+    <p class="txt2">Create and manageyour courses .</p>
+  </div>
+
+  <div class="main">
+    <div class="menu">
+      <ul>
+        <li>
+          <div class="step first">
+            <p>01</p>
+            <i class="awesome fa-solid fa-check"></i>
+          </div>
+          <p class="label">Information</p>
+        </li>
+        <li>
+          <div class="step second">
+            <p>02</p>
+            <i class="awesome fa-solid fa-check"></i>
+          </div>
+          <p class="label">Curriculum</p>
+        </li>
+        <li>
+          <div class="step third">
+            <p>03</p>
+            <i class="awesome fa-solid fa-check"></i>
+          </div>
+          <p class="label">Pricing</p>
+        </li>
+        <li>
+          <div class="step fourth">
+            <p>04</p>
+            <i class="awesome fa-solid fa-check"></i>
+          </div>
+          <p class="label">Certificate</p>
+        </li>
+      </ul>
+    </div>
+    <div style="padding: 150px 0; width: 90%;">
+      <form action="" id="multi-step-form" method="post">
+        <!--first Sec-->
+        <fieldset>
+          <p class="txt3">Course Information</p>
+          <div class="d-flex flex-column gap-3 pt-5 c-title">
+            <label for="Course Title" class="title">Course Title</label>
+            <input type="text" id="courseTitleInput" name="courseTitleInput"
+              placeholder="Example : Learn python from zero to hero." maxlength="40">
+            <p id="charCount" class="text-end" style="color: #A0A3BD;">0/40</p>
+          </div>
+          <div class="d-flex flex-column gap-3 pt-5 c-title">
+            <label for="Course Title" class="title">Course description</label>
+            <input type="text" id="courseTitleInput" name="courseTitleInput"
+              placeholder="Example : Learn python from zero to hero." minlength="200">
+            <p style="color: #A0A3BD;">Description should have minimum 200 words.</p>
+          </div>
+          <div class="gap-3 pt-5 c-title">
+            <p class="title">Course image</p>
+            <div class="d-flex gap-5">
+              <div id="imageContainer"
+                style="width: 570px; height: 301px; border: 1px solid #A0A3BD; display: flex; justify-content: center; align-items: center;">
+                <img id="uploadedImage" src="img/unknown.png" alt=""
+                  style="display: block; max-width: 100%; max-height: 100%;">
+              </div>
+              <div>
+                <p class="txt4">Upload your course image here. Important guidelines: 750x422 pixels; .jpg, .jpeg, .gif,
+                  or .png. no
+                  text on the image.</p>
+                <!-- Hide the input visually -->
+                <input type="file" id="fileInput" name="fileInput" style="display: none;" onchange="displayImage()">
+                <button type="button" onclick="document.getElementById('fileInput').click()" class="upload">Upload <i
+                    class="fa-solid fa-upload" style="color: #fafafa; padding-left: 15px;"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class=" gap-3 pt-5 c-title">
+            <p class="title">Basic information</p>
+            <div class="d-flex gap-2">
+              <select name="category" id="category">
+                <option value="" disabled selected hidden>Choose a category</option>
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="flutter">Flutter</option>
+              </select>
+
+              <select name="level" id="category">
+                <option value="" disabled selected hidden>Select a level</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+              </select>
+            </div>
+          </div>
+          <div class="gap-3 pt-5 c-title">
+            <p class="title">What will students learn in your course ?</p>
+            <p class="txt5">You must enter at least 4 learning objectives or outcomes that learners can expect to
+              achieve after
+              completing your course.</p>
+            <div class="d-flex flex-column gap-4" id="inputContainer">
+              <input type="text" name="projecttimeline" id="projectTimeline "
+                placeholder="Example : Estimate project timeline and budgets.">
+              <input type="text" name="projecttimeline" id="projectTimeline"
+                placeholder="Example : Estimate project timeline and budgets.">
+              <input type="text" name="projecttimeline" id="projectTimeline"
+                placeholder="Example : Estimate project timeline and budgets.">
+              <button id="addButton">Add<i class="fa-solid fa-plus"
+                  style="color: #ffffff; padding-left: 10px;"></i></button>
+
+            </div>
+
+          </div>
+          <div class="gap-3 pt-5 c-title">
+            <p class="title">What are the requirements or prerequisites for taking your course ?</p>
+            <p class="txt5">List the required skills, experience, tools or equipment learners should have prior to
+              taking your course. If there are no requirements, use this space as an opportunity to lower the barrier
+              for beginners.</p>
+            <div class="d-flex flex-column gap-4" id="inputContainer2">
+              <input type="text" name="Skills" class="Skills" placeholder="Example: good knowledge in English.">
+              <button class="addButton2">Add<i class="fa-solid fa-plus"
+                  style="color: #ffffff; padding-left: 10px;"></i></button>
+            </div>
+
+          </div>
+          <div class="gap-3 pt-5 c-title">
+            <p class="title">Who is this course for ?</p>
+            <p class="txt5">Write a clear description of the intended learners for your course who will find your course
+              content valuable.</p>
+            <p class="txt5">This will help you attract the right learners to your course</p>
+            <div class="d-flex flex-column gap-4" id="inputContainer3">
+              <input type="text" name="CourseFor" class="CourseFor"
+                placeholder="Example : beginner python that curious about Datascience.">
+              <button class="addButton3">Add<i class="fa-solid fa-plus"
+                  style="color: #ffffff; padding-left: 10px;"></i></button>
+            </div>
+          </div>
+        </fieldset>
+
+        <!--end Sec-->
+        <!--first Sec2-->
+        <fieldset>
+          <div class="gap-3  c-title">
+            <p class="title" id="cir">Curriculum</p>
+            <main class='drag' id="fieldsetToHide">
+              <div class="d-flex flex-column">
+                <div draggable="true">⠿</div>
+                <ul class='drag-list d-flex flex-column' id="lessonList">
+                  <!-- Your list items here -->
+                  <li class='drag-item'>
+                    <div class='drag-details gap-3'>
+                      <div class='drag-icon'>⠿</div>
+                      <p class="m-0 txt7">Basic of Python</p>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </li>
+                  <li class='drag-item' draggable='true'>
+                    <div class='drag-details gap-3'>
+                      <div class='drag-icon'>⠿</div>
+                      <div class="m-0">
+                        <a href="" class="txt8" id="hideFieldsetButton">Basic of Python</a>
+                        <p class="m-0 txt9">Basic of Python</p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                  </li>
+                  <li class='drag-item' draggable='true'>
+                    <div class='drag-details gap-3'>
+                      <div class='drag-icon'>⠿</div>
+                      <div class="m-0">
+                        <a href="" class="txt8" id="hideFieldsetButton1">Basic of Python</a>
+                        <p class="m-0 txt9">Basic of Python</p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                  </li>
+                  <li class='drag-item' draggable='true'>
+                    <div class='drag-details gap-3'>
+                      <div class='drag-icon'>⠿</div>
+                      <div class="m-0">
+                        <a href="" class="txt8" id="hideFieldsetButton2">Basic of Python</a>
+                        <p class="m-0 txt9">Basic of Python</p>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                  </li>
+                  <!-- Add more list items if needed -->
+                  <li class='drag-item'>
+                    <div class='drag-details'>
+                      <button class="m-0 addLessonButton">Add new Lesson <i class="fa-solid fa-plus"
+                          style="padding-left: 5px;"></i></button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </main>
+
+            <div id="newDivToShow" style="display: none;">
+              <!-- Your new div content here -->
+              <a href="#" style="text-decoration: none;" id="backButton"><i class="fa-solid fa-less-than"
+                  style="margin: 0px 20px;"></i>Back</a>
+              <p class="txt10 py-3" style="margin:  0px 10px;">Lesson Detail</p>
+              <div class=" all">
+                <div class=" d-flex justify-content-between syntax">
+                  <p class="m-0 txt12">Python Syntax</p>
+                  <i class="fa-solid fa-ellipsis-vertical "></i>
+
+                </div>
+
+                <div class=" d-flex justify-content-between syntax1">
+                  <p class="m-0 txt12">Text</p>
+                  <div class="d-flex gap-3">
+                    <a href="#" style="    margin-top: -3px;" class="edit">Edite</a>
+                    <i class="fa-solid fa-ellipsis-vertical m-0"></i>
+
+                  </div>
+                </div>
+                <p style="padding: 0 20px;" class="txt13">In this lesson, we will dive into the fundamentals of Python
+                  syntax. Python
+                  is a high-level
+                  interpreted
+                  language known for its simplicity and readability. Understanding the syntax of Python is crucial as it
+                  dictates the structure and rules for writing code in Python. By mastering Python syntax, you will be
+                  able to
+                  create powerful and efficient programs.</p>
+                <br>
+                <p style="  border-bottom: 2px solid #d9d9d9d9; padding: 0px 20px; padding-bottom: 15px;  "
+                  class="txt13">Key topics
+                  to be
+                  covered in this lesson
+                  include indentations, variables, data types, operators, and control
+                  flow statements. Indentations play a key role in Python syntax as it is used to define blocks of code.
+                  Variables are used to store data in memory, while data types determine the type of data that can be
+                  stored.
+                  Operators are used for performing operations, and control flow statements are used to determine the
+                  flow of
+                  execution in a program.</p>
+                <div class="d-flex justify-content-center pt-5">
+                  <button class="addContent">Add Content<i class="fa-solid fa-plus"
+                      style="color: #ffffff; padding-left: 10px;"></i></button>
+                </div>
+              </div>
+
+            </div>
+
+            <div id="popupModal" class="modal">
+              <div class="modal-content" style="width: 660px; height: 370px;">
+                <div class="d-flex justify-content-between">
+                  <p class="m-0 content1" style="padding-top: 10px;">Content</p>
+
+                  <span class="close">&times;</span>
+                </div>
+                <div class="d-flex justify-content-center pt-4 gap-3">
+                  <div class="contentDetail"
+                    style="width: 174px; height: 157px; display: flex; justify-content: center; align-items: center;">
+                    <img src="img/text.png" alt="">
+                  </div>
+                  <div class="contentDetail"
+                    style="width: 174px; height: 157px; display: flex; justify-content: center; align-items: center;">
+                    <img src="img/video.png" alt="">
+                  </div>
+                  <div class="contentDetail"
+                    style="width: 174px; height: 157px; display: flex; justify-content: center; align-items: center;">
+                    <img src="img/quiz.png" alt="">
+                  </div>
+
+                </div>
+                <div class="d-flex justify-content-center pt-5">
+                  <button id="nextbutton1">next</button>
+
+                </div>
+              </div>
+
+            </div>
+        </fieldset>
+        <!--end Sec2-->
+        <!--first Sec2-->
+
+        <fieldset>
+          <div class="c-title">
+            <p class="title">Pricing</p>
+            <p class="txt14">Please select the currency and the price tier for your course. If you’d like to offer your
+              course for free, it must have a total video length of less than 2 hours. Also, courses with practice tests
+              can not be free.</p>
+            <div class="d-flex gap-5 pt-3 coursePrice">
+              <div class="d-flex flex-column price gap-2">
+                <label for="">Price</label>
+                <input type="number" name="price" id="price" placeholder="Amount">
+              </div>
+              <div class="d-flex flex-column country gap-2">
+                <label for="">currency</label>
+                <select name="country" id="country">
+                  <option value="">Usa</option>
+                  <option value="EGP">EGP</option>
+
+                </select>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <!--end Sec3-->
+
+        <!--first Sec4-->
+        <fieldset>
+          <div class="c-title">
+            <p class="title">Certificate</p>
+            <div class="certificateDiv"
+              style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <img src="img/certificate.png" alt="" width="160px" height="160px">
+              <p>Reward your students with certificates</p>
+              <p>With this feature, you can give certificates of completion to students who finish your course.</p>
+              <input type="file" name="" id="" style="display: none;">
+              <button id="uploadCerificate">Upload certificate template <i class="fa-solid fa-plus"
+                  style="color: #ffffff; padding-left: 10px;"></i></button>
+            </div>
+
+          </div>
+        </fieldset>
+        <!--end Sec4-->
+
+      </form>
+      <div class="buttons">
+        <button id="back">back</button>
+        <button id="nextbutton">next</button>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <script src="js/lib/jquery-3.7.1.min.js"></script>
+  <script src="js/lib/popper.min.js"></script>
+  <script src="js/lib/bootstrap.js"></script>
+  <script src="js/AddNewCourse.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/dist/sortable.min.js"></script> -->
+
+
+</body>
+
+</html>

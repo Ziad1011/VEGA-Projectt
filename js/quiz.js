@@ -251,7 +251,8 @@ function queCounter(index) {
   bottom_ques_counter.innerHTML = totalQueCounTag; //adding new span tag inside bottom_ques_counter
 }
 
-function hideButton() {
-  const restart_quiz = result_box.querySelector(".buttons .restart");
-  restart_quiz.style.display = "none";
-}
+const startQuizBtn = document.getElementById("startQuizBtn");
+
+startQuizBtn.addEventListener("click", function () {
+  this.style.display = "none"; // Hides the button itself
+});

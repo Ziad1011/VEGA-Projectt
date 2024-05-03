@@ -1,0 +1,15 @@
+.syntax {
+  border: 1px solid #6f6c8f;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.all {
+  border: 1px solid green;
+  padding-bottom: 67px;
+}
+
+.syntax1 {
+  border-top: none;
+  padding-top: 20px;
+}
